@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tip Calculator</title>
+    <link rel="icon" href="favicon.png" type="image/x-icon" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>Tip Calculator</h1>
+    <div class="container">
+      <div class="calculations">
+        <div class="calculations-container">
+          <label for="bill">Bill</label>
+          <div class="input-container">
+            <input type="text" id="bill" name="bill" placeholder="50.00" />
+          </div>
+          <label for="tip">Tip %</label>
+          <div class="input-container tip-field">
+            <button class="decrease"><i class="fa-solid fa-minus"></i></button
+            ><input type="text" id="tip" name="tip" placeholder="5%" /><button
+              class="increase"
+            >
+              <i class="fa-solid fa-plus"></i>
+            </button>
+          </div>
+          <label for="people">Number of people</label>
+          <div class="input-container people-field">
+            <button class="decrease"><i class="fa-solid fa-minus"></i></button
+            ><input
+              type="text"
+              id="people"
+              name="people"
+              placeholder="2"
+            /><button class="increase">
+              <i class="fa-solid fa-plus"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="output">
+        <div class="tip">
+          <div class="tip-text">
+            <h1 id="tip">Tip</h1>
+            <h5 class="per-person">per person</h5>
+          </div>
+          <div class="tip-amount-container">
+            <h1 class="tip-amount">$0.00</h1>
+          </div>
+        </div>
+        <div class="total">
+          <div class="total-text">
+            <h1 id="total">Total</h1>
+            <h5 class="per-person">per person</h5>
+          </div>
+          <div class="total-tip-amount-container">
+            <h1 class="total-tip-amount">$0.00</h1>
+          </div>
+        </div>
+      </div>
+    </div>
+    <h6 class="creator">
+      by
+      <a title="GitHub" href="https://github.com/Leytox" id="creator-link"
+        >Devder Ilya</a
+      >
+    </h6>
+    <script
+      src="https://kit.fontawesome.com/3682ce890d.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="script.js"></script>
+  </body>
+</html>
