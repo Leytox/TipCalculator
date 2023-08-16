@@ -18,22 +18,25 @@
           </div>
           <label for="tip">Tip %</label>
           <div class="input-container tip-field">
-            <button class="decrease"><i class="fa-solid fa-minus"></i></button
+            <button class="decrease" id="decrease-tip">
+              <i class="fa-solid fa-minus"></i></button
             ><input type="text" id="tip" name="tip" placeholder="5%" /><button
               class="increase"
+              id="increase-tip"
             >
               <i class="fa-solid fa-plus"></i>
             </button>
           </div>
           <label for="people">Number of people</label>
           <div class="input-container people-field">
-            <button class="decrease"><i class="fa-solid fa-minus"></i></button
+            <button class="decrease" id="decrease-people">
+              <i class="fa-solid fa-minus"></i></button
             ><input
               type="text"
               id="people"
               name="people"
               placeholder="2"
-            /><button class="increase">
+            /><button class="increase" id="increase-people">
               <i class="fa-solid fa-plus"></i>
             </button>
           </div>
@@ -42,7 +45,7 @@
       <div class="output">
         <div class="tip">
           <div class="tip-text">
-            <h1 id="tip">Tip</h1>
+            <h1 id="tip-header">Tip</h1>
             <h5 class="per-person">per person</h5>
           </div>
           <div class="tip-amount-container">
